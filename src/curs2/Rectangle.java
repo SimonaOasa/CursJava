@@ -5,6 +5,7 @@ public class Rectangle {
 	int lungime;
 	int latime;
 	int inaltime; 
+	String culoare="ALB";
 	
 	public  int calculArie(int lungime, int latime) {
 		
@@ -17,6 +18,11 @@ public class Rectangle {
 		return 2 * (lungime + latime);
 	}
 	
+	public String afiseazaCuloareDreptunghi() {
+		return culoare;
+	}
+	
+	
 	//constructor default 
 	public Rectangle() {}
 	public Rectangle(int lungime, int latime) {
@@ -25,4 +31,11 @@ public class Rectangle {
 		
 	}
 
+	//constructor nou
+	public Rectangle(int lungime , int latime , String culoare) {
+		this.lungime=lungime;
+		this.latime=latime;
+		this.culoare=culoare;
+	}
+	
 }

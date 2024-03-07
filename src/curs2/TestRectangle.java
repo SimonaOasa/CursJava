@@ -16,6 +16,13 @@ public class TestRectangle {
 		*/
 		Rectangle obiect3 = new Rectangle(8,12);
 		System.out.println(obiect3.calculArie(obiect3.lungime,obiect3.latime ));
+		
+		//obiect nou 
+		Rectangle obiect4 = new Rectangle (8,12);
+		System.out.println(obiect4.afiseazaCuloareDreptunghi());
+		
+		//apelare afisare culoare pe un obiect folosit la curs
+		System.out.println(obiect3.afiseazaCuloareDreptunghi());
 	}
 
 }
