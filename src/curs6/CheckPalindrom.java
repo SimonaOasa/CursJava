@@ -38,7 +38,7 @@ public class CheckPalindrom {
 		
 		StringBuilder sb = new StringBuilder(cuvantInitial);
 		System.out.println("String builder " + sb.reverse());//?"Este palindrom":"Nu este palindrom";
-		
+		scan.close();
 	}
 
 }
