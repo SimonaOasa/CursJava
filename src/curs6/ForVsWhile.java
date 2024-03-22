@@ -14,6 +14,21 @@ public class ForVsWhile {
         rezolvareCuFor2();
 	}
 	
+	
+	public static void rezolvareCuDoWhile() {
+		int i; 
+		do {
+			System.out.println("Please enter a number: ");
+			Scanner scan = new Scanner (System.in);
+			i = scan.nextInt();
+	
+			i*=10;
+			System.out.println(i);
+		}while (i!=0);
+			
+	}
+	
+	
 	public static void rezolvareCuWhile () {
 		System.out.println("Please enter a number: ");
 		Scanner scan = new Scanner (System.in);
@@ -54,6 +69,7 @@ public class ForVsWhile {
 			System.out.println(i);
 			System.out.println("Please enter a number: ");
 		}
+		scan.close();
 	}
-
+	
 }
