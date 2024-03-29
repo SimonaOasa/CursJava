@@ -25,6 +25,9 @@ public class ArrayExample3 {
 		
 	}
 	
+	
+	
+	
 	public int [] generateArray() {
 		int [] numbers = new int [ARRAY_LENGTH];
 		
