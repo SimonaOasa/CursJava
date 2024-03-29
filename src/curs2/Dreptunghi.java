@@ -43,6 +43,7 @@ public class Dreptunghi {
 		int arieDreptunghi2=calculArie(lungime2,latime2);
 		System.out.println("Aria dreptunghi este : " + arieDreptunghi2);
 
+		 scan.close();
 	}
 
 }
