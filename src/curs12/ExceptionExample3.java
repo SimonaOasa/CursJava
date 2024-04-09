@@ -11,7 +11,7 @@ public class ExceptionExample3 {
 		}catch(Exception e) {
 			System.out.println("Exception occured");
 			System.out.println(3/0);
-			throw new Exception("");
+			//throw new Exception("");
 		}finally {
 			System.out.println("Finally block of code!");
 		}
