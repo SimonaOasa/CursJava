@@ -1,0 +1,84 @@
+package curs14;
+
+import java.util.Properties;
+import java.util.Scanner;
+import java.io.*;
+
+public class PropertiesFileProcessor {
+
+	public void writePropertiesFile() {
+		try(OutputStream outputStream = new FileOutputStream("test.properties");) {
+			
+			Properties propFile = new Properties();
+			propFile.setProperty("user", "testUser");
+			propFile.setProperty("pass", "test123");
+			propFile.setProperty("email", "test@test.com");
+			
+			propFile.store(outputStream, "am salvat fisierul");
+			
+			//outputStream.close();
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+
+
+	public void readPropertiesFile(String key) {
+	
+	try (InputStream inputStream = new FileInputStream("test.properties")) {
+		
+		Properties propfile = new Properties();
+		propfile.load(inputStream);
+		
+		System.out.println(propfile.getProperty(key));
+		
+		
+	}catch(IOException e) {
+		System.out.println("Cannot read properties file");
+	}
+		
+}
+	
+	public void updatePropertiesFile(String key, String value) {
+					
+			Properties propFile = new Properties();	
+			try(InputStream input =  new FileInputStream("test.properties")){
+				propFile.load(input);
+			}catch(IOException e) {	
+				e.printStackTrace();
+			}
+			
+			try(OutputStream output = new FileOutputStream("test.properties")){
+				propFile.setProperty(key, value);
+				propFile.store(output, null);
+			}catch(IOException e) {		
+				e.printStackTrace();
+			}
+		
+	}
+		
+		public void deleteFromPropertiesFile(String key) {
+			Properties propFile = new Properties();	
+			try(InputStream input =  new FileInputStream("test.properties")){
+				propFile.load(input);
+			}catch(IOException e) {	
+				e.printStackTrace();
+			}
+			
+			try(OutputStream output = new FileOutputStream("test.properties")){
+				propFile.remove(key);
+				propFile.store(output, null);
+			}catch(IOException e) {		
+				e.printStackTrace();
+			}
+		}
+		
+	}
+
+
+
+
