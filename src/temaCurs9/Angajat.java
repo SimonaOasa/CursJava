@@ -35,7 +35,7 @@ public class Angajat {
         		 System.out.println("Ai primit bonus:  " + bonus);
             	 break;
         	 }else if(vanzariEfectuate <= 10000 && (luna >= 7 && luna <= 11 )) {
-        s		 bonus =  1000;
+        		 bonus =  1000;
         		 System.out.println("Ai primit bonus:  " + bonus);
             	 break;
         	 }else if(vanzariEfectuate <= 10000 && (luna == 12 )) {
