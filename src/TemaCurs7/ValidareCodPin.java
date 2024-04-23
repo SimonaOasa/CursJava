@@ -11,13 +11,14 @@ import java.util.Scanner;
 
 
 public class ValidareCodPin {
-
+	public static final int PinDefault = 2244;
+	
 	public static void main(String[] args) {
-		//int i = 0;
+		int i = 0;
 	    int PinIntrodus = 0;
-	    int PinDefault = 2244;
+	    
 		
-		for(int i = 0 ; i <= 2; i++) {
+		for( i = 0 ; i <= 2; i++) {
 			System.out.println("Introdu codul PIN: ");
 			Scanner scan = new Scanner(System.in);
 			PinIntrodus = scan.nextInt();
@@ -28,9 +29,13 @@ public class ValidareCodPin {
 				System.out.println("Wrong PIN");
 				if(i == 2) {
 					System.out.println("Maximum attempts reached. Card blocked");
+					
 				}
 			}
 		}
+		
+	System.out.println(i);
+		
 		
 		
 		
