@@ -57,7 +57,7 @@ public class ArrayListExample {
 		
 		System.out.println(list);
 		
-		list.remove("Bogdan");
+		list.remove("Bogdan"); 
 		
 		System.out.println(list);
 
