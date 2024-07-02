@@ -1,6 +1,7 @@
 package curs13;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayListExample {
@@ -68,6 +69,9 @@ public class ArrayListExample {
 		//[Maria, Gabriel, Carmen, Elena, Ioana, Vlad, Marcel]
 
 		//   0        1       2       3     4      5     6
+		List<String> listSorted =  new ArrayList<>();
+		Collections.sort(list);
+		System.out.println(list);
 		System.out.println(list.size());
 		System.out.println(list.subList(1, 7));
 		list.subList(1, 7).clear();
